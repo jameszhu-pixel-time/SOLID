@@ -1,0 +1,5 @@
+# Install only the backend used by the experiment. Each solver may require a
+# separate license configured outside this repository.
+coptpy>=7.2
+gurobipy>=12.0
+

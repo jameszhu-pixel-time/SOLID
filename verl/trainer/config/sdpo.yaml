@@ -1,0 +1,57 @@
+defaults:
+  - ppo_trainer
+  - user
+  - _self_
+
+# MAX_PROMPT_LENGTH=2048
+# MAX_RESPONSE_LENGTH=8192
+# MAX_FEEDBACK_LENGTH=6144
+# TEMPLATE_LENGTH=512  # heuristic upper bound, not enforced
+# MAX_MODEL_LEN=$((TEMPLATE_LENGTH + MAX_PROMPT_LENGTH + MAX_FEEDBACK_LENGTH + MAX_RESPONSE_LENGTH))
+max_model_len: 16384
+
+actor_rollout_ref:
+  actor:
+    ppo_mini_batch_size: 32
+    policy_loss:
+      loss_mode: sdpo
+    self_distillation:
+      max_reprompt_len: 8192
+      is_clip: 2.0
+      use_or_template: False
+      or_template_style: gurobi
+    optim:
+      lr: 1e-5
+    bootstrap_kl: False
+    bootstrap_kl_style: gurobi
+    # Options: linear, exponential, uniform, problem_info, random_flipped, random_stage, solver_info.
+    bootstrap_kl_decay: linear
+    bootstrap_kl_gamma: 2.0
+    bootstrap_kl_random_mask_prob: 0.5
+    bootstrap_kl_random_seed: 42
+  rollout:
+    n: 8
+    calculate_log_probs: True
+
+algorithm:
+  adv_estimator: grpo
+  norm_adv_by_std_in_grpo: False
+  rollout_correction:
+    rollout_is: token
+    rollout_is_threshold: 2.0
+
+data:
+  train_batch_size: 32
+
+trainer:
+  val_before_train: True
+  apply_OR_distill: False
+
+ttrl:
+  enable: False
+  voting_strategy: majority  # majority | zero_filtered_majority | complexity_aligned | golden_answer
+  solver_name: gurobi  # "gurobi" or "copt" (for StepORLM)
+  n_votes_per_prompt: ${actor_rollout_ref.rollout.n}
+  n_samples_per_prompt: ${actor_rollout_ref.rollout.n} #perform no downsampling here
+  use_or_template: False
+  lp_selection_target: voted_answer  # voted_answer | golden_answer

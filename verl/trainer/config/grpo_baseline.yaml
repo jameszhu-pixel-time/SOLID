@@ -1,0 +1,51 @@
+defaults:
+  - ppo_trainer
+  - user
+  - _self_
+
+# OR GRPO baseline: standard GRPO with reference-policy KL.
+max_model_len: 24576
+
+data:
+  train_batch_size: 32
+  max_prompt_length: 4096
+  max_response_length: 16384
+  chat_template_style: gurobi
+
+actor_rollout_ref:
+  actor:
+    ppo_mini_batch_size: 32
+    use_kl_loss: True
+    kl_ref_log_prob_source: reference
+    kl_loss_coef: 0.001
+    kl_loss_type: low_var_kl
+    policy_loss:
+      loss_mode: vanilla
+    optim:
+      lr: 1e-6
+  rollout:
+    n: 24
+    calculate_log_probs: True
+    tensor_model_parallel_size: 1
+    gpu_memory_utilization: 0.3
+    temperature: 1.0
+
+algorithm:
+  adv_estimator: grpo
+  norm_adv_by_std_in_grpo: False
+  rollout_correction:
+    rollout_is: token
+    rollout_is_threshold: 2.0
+
+ttrl:
+  enable: False
+
+trainer:
+  apply_OR_distill: False
+  n_gpus_per_node: 4
+  logger: ["console"]
+  save_freq: 25
+  max_actor_ckpt_to_keep: 3
+
+reward_model:
+  reward_manager: batch

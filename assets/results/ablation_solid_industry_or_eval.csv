@@ -1,0 +1,125 @@
+step,dataset,metric,run,value,solid_leads
+0,Industry_OR,mean@4,TTRL,0.405000,no
+5,Industry_OR,mean@4,TTRL,0.412500,no
+10,Industry_OR,mean@4,TTRL,0.400000,no
+15,Industry_OR,mean@4,TTRL,0.402500,no
+20,Industry_OR,mean@4,TTRL,0.432500,no
+25,Industry_OR,mean@4,TTRL,0.427500,no
+30,Industry_OR,mean@4,TTRL,0.420000,no
+35,Industry_OR,mean@4,TTRL,0.422500,no
+40,Industry_OR,mean@4,TTRL,0.407500,no
+45,Industry_OR,mean@4,TTRL,0.417500,no
+50,Industry_OR,mean@4,TTRL,0.410000,no
+55,Industry_OR,mean@4,TTRL,0.407500,no
+60,Industry_OR,mean@4,TTRL,0.417500,no
+65,Industry_OR,mean@4,TTRL,0.412500,no
+70,Industry_OR,mean@4,TTRL,0.400000,no
+75,Industry_OR,mean@4,TTRL,0.397500,no
+80,Industry_OR,mean@4,TTRL,0.387500,no
+85,Industry_OR,mean@4,TTRL,0.407500,no
+90,Industry_OR,mean@4,TTRL,0.410000,no
+95,Industry_OR,mean@4,TTRL,0.435000,no
+100,Industry_OR,mean@4,TTRL,0.407500,no
+105,Industry_OR,mean@4,TTRL,0.412500,no
+110,Industry_OR,mean@4,TTRL,0.400000,no
+115,Industry_OR,mean@4,TTRL,0.432500,no
+120,Industry_OR,mean@4,TTRL,0.412500,no
+125,Industry_OR,mean@4,TTRL,0.402500,no
+130,Industry_OR,mean@4,TTRL,0.410000,no
+135,Industry_OR,mean@4,TTRL,0.410000,no
+140,Industry_OR,mean@4,TTRL,0.422500,no
+145,Industry_OR,mean@4,TTRL,0.422500,no
+150,Industry_OR,mean@4,TTRL,0.430000,no
+0,Industry_OR,mean@4,TTRL + KL supervision,0.425000,no
+5,Industry_OR,mean@4,TTRL + KL supervision,0.390000,no
+10,Industry_OR,mean@4,TTRL + KL supervision,0.380000,no
+15,Industry_OR,mean@4,TTRL + KL supervision,0.437500,no
+20,Industry_OR,mean@4,TTRL + KL supervision,0.402500,no
+25,Industry_OR,mean@4,TTRL + KL supervision,0.442500,no
+30,Industry_OR,mean@4,TTRL + KL supervision,0.415000,no
+35,Industry_OR,mean@4,TTRL + KL supervision,0.410000,no
+40,Industry_OR,mean@4,TTRL + KL supervision,0.410000,no
+45,Industry_OR,mean@4,TTRL + KL supervision,0.412500,no
+50,Industry_OR,mean@4,TTRL + KL supervision,0.425000,no
+55,Industry_OR,mean@4,TTRL + KL supervision,0.427500,no
+60,Industry_OR,mean@4,TTRL + KL supervision,0.425000,no
+65,Industry_OR,mean@4,TTRL + KL supervision,0.425000,no
+70,Industry_OR,mean@4,TTRL + KL supervision,0.407500,no
+75,Industry_OR,mean@4,TTRL + KL supervision,0.407500,no
+80,Industry_OR,mean@4,TTRL + KL supervision,0.422500,no
+85,Industry_OR,mean@4,TTRL + KL supervision,0.425000,no
+90,Industry_OR,mean@4,TTRL + KL supervision,0.425000,no
+95,Industry_OR,mean@4,TTRL + KL supervision,0.417500,no
+100,Industry_OR,mean@4,TTRL + KL supervision,0.437500,no
+105,Industry_OR,mean@4,TTRL + KL supervision,0.430000,no
+110,Industry_OR,mean@4,TTRL + KL supervision,0.460000,no
+115,Industry_OR,mean@4,TTRL + KL supervision,0.452500,no
+120,Industry_OR,mean@4,TTRL + KL supervision,0.435000,no
+125,Industry_OR,mean@4,TTRL + KL supervision,0.412500,no
+130,Industry_OR,mean@4,TTRL + KL supervision,0.450000,no
+135,Industry_OR,mean@4,TTRL + KL supervision,0.462500,no
+140,Industry_OR,mean@4,TTRL + KL supervision,0.437500,no
+145,Industry_OR,mean@4,TTRL + KL supervision,0.450000,no
+150,Industry_OR,mean@4,TTRL + KL supervision,0.460000,no
+0,Industry_OR,mean@4,TTRL + random KL supervision,0.402500,no
+5,Industry_OR,mean@4,TTRL + random KL supervision,0.407500,no
+10,Industry_OR,mean@4,TTRL + random KL supervision,0.437500,no
+15,Industry_OR,mean@4,TTRL + random KL supervision,0.400000,no
+20,Industry_OR,mean@4,TTRL + random KL supervision,0.417500,no
+25,Industry_OR,mean@4,TTRL + random KL supervision,0.425000,no
+30,Industry_OR,mean@4,TTRL + random KL supervision,0.415000,no
+35,Industry_OR,mean@4,TTRL + random KL supervision,0.422500,no
+40,Industry_OR,mean@4,TTRL + random KL supervision,0.425000,no
+45,Industry_OR,mean@4,TTRL + random KL supervision,0.397500,no
+50,Industry_OR,mean@4,TTRL + random KL supervision,0.422500,no
+55,Industry_OR,mean@4,TTRL + random KL supervision,0.427500,no
+60,Industry_OR,mean@4,TTRL + random KL supervision,0.425000,no
+65,Industry_OR,mean@4,TTRL + random KL supervision,0.410000,no
+70,Industry_OR,mean@4,TTRL + random KL supervision,0.435000,no
+75,Industry_OR,mean@4,TTRL + random KL supervision,0.425000,no
+80,Industry_OR,mean@4,TTRL + random KL supervision,0.447500,no
+85,Industry_OR,mean@4,TTRL + random KL supervision,0.405000,no
+90,Industry_OR,mean@4,TTRL + random KL supervision,0.450000,no
+95,Industry_OR,mean@4,TTRL + random KL supervision,0.415000,no
+100,Industry_OR,mean@4,TTRL + random KL supervision,0.437500,no
+105,Industry_OR,mean@4,TTRL + random KL supervision,0.452500,no
+110,Industry_OR,mean@4,TTRL + random KL supervision,0.450000,no
+115,Industry_OR,mean@4,TTRL + random KL supervision,0.440000,no
+120,Industry_OR,mean@4,TTRL + random KL supervision,0.432500,no
+125,Industry_OR,mean@4,TTRL + random KL supervision,0.447500,no
+130,Industry_OR,mean@4,TTRL + random KL supervision,0.447500,no
+135,Industry_OR,mean@4,TTRL + random KL supervision,0.455000,no
+140,Industry_OR,mean@4,TTRL + random KL supervision,0.450000,no
+145,Industry_OR,mean@4,TTRL + random KL supervision,0.445000,no
+150,Industry_OR,mean@4,TTRL + random KL supervision,0.467500,no
+0,Industry_OR,mean@4,SOLID,0.407500,no
+5,Industry_OR,mean@4,SOLID,0.395000,no
+10,Industry_OR,mean@4,SOLID,0.407500,no
+15,Industry_OR,mean@4,SOLID,0.420000,no
+20,Industry_OR,mean@4,SOLID,0.427500,no
+25,Industry_OR,mean@4,SOLID,0.410000,no
+30,Industry_OR,mean@4,SOLID,0.420000,yes
+35,Industry_OR,mean@4,SOLID,0.412500,no
+40,Industry_OR,mean@4,SOLID,0.430000,yes
+45,Industry_OR,mean@4,SOLID,0.442500,yes
+50,Industry_OR,mean@4,SOLID,0.417500,no
+55,Industry_OR,mean@4,SOLID,0.442500,yes
+60,Industry_OR,mean@4,SOLID,0.417500,no
+65,Industry_OR,mean@4,SOLID,0.425000,yes
+70,Industry_OR,mean@4,SOLID,0.445000,yes
+75,Industry_OR,mean@4,SOLID,0.420000,no
+80,Industry_OR,mean@4,SOLID,0.460000,yes
+85,Industry_OR,mean@4,SOLID,0.452500,yes
+90,Industry_OR,mean@4,SOLID,0.420000,no
+95,Industry_OR,mean@4,SOLID,0.422500,no
+100,Industry_OR,mean@4,SOLID,0.422500,no
+105,Industry_OR,mean@4,SOLID,0.435000,no
+110,Industry_OR,mean@4,SOLID,0.417500,no
+115,Industry_OR,mean@4,SOLID,0.417500,no
+120,Industry_OR,mean@4,SOLID,0.425000,no
+125,Industry_OR,mean@4,SOLID,0.422500,no
+130,Industry_OR,mean@4,SOLID,0.452500,yes
+135,Industry_OR,mean@4,SOLID,0.427500,no
+140,Industry_OR,mean@4,SOLID,0.422500,no
+145,Industry_OR,mean@4,SOLID,0.442500,no
+150,Industry_OR,mean@4,SOLID,0.445000,no
