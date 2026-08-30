@@ -14,7 +14,7 @@
 
 </div>
 
-This repository contains the anonymized implementation of **SOLID**
+This repository contains the official implementation of **SOLID**
 (**S**olver-Informed **O**n-Policy **L**earn**I**ng through Self-**D**istillation).
 SOLID learns from unlabeled OR prompts without verified answers, a reward model,
 or an external judge. It executes sampled solver programs, turns objective
@@ -36,7 +36,7 @@ import namespace for compatibility. The paper-to-code correspondence is in
   context and refreshed after every optimizer update.
 - **Matched baseline:** `scripts/run_ttrl.sh` shares the rollout, reward, batch,
   and optimizer settings and disables only SOLID's self-distillation terms.
-- **Reproducible release assets:** the plotted values are included as CSV files,
+- **Reproducible paper assets:** the plotted values are included as CSV files,
   and both README result figures can be regenerated locally.
 
 ## Method
@@ -101,20 +101,6 @@ README figures with:
 python -m pip install -r requirements-plot.txt
 python scripts/plot_readme_results.py
 ```
-
-## Release completeness
-
-| Component | Status | Location / note |
-| --- | :---: | --- |
-| Dependency specification | ✅ | `requirements*.txt` and `pyproject.toml` |
-| Training code | ✅ | `scripts/run_solid.sh` and `scripts/run_ttrl.sh` |
-| Evaluation hooks | ✅ | validation in the training loop; offline entry point in `verl/trainer/main_eval.py` |
-| Result table and curves | ✅ | CSV sources and deterministic plotting script |
-| Pretrained checkpoints | ⏳ | not included in this anonymous staging release |
-
-Models, datasets, solver licenses, and checkpoints are intentionally not
-committed. Their redistribution terms differ, and solver operation may require
-a separate license.
 
 ## Installation
 
@@ -197,8 +183,8 @@ ignored by Git.
 ```text
 .
 ├── assets/                 # README figures and their result CSV sources
-├── docs/                   # method-to-code and anonymization notes
-├── scripts/                # release audit, launchers, and plotting utility
+├── docs/                   # paper method-to-code correspondence
+├── scripts/                # training launchers and result plotting utility
 ├── training/               # common Hydra launcher
 └── verl/
     ├── or_utils/           # solver execution, rewards, LP parsing
@@ -206,24 +192,9 @@ ignored by Git.
     └── ...                 # distributed veRL runtime
 ```
 
-## Release audit
-
-Before publishing or packaging the repository, run:
-
-```bash
-bash scripts/audit_release.sh
-```
-
-The audit checks for machine-specific paths, research identities, tracking
-defaults, literal credentials, credential-like files, runtime artifacts, and
-Python syntax errors. See [`docs/ANONYMIZATION.md`](docs/ANONYMIZATION.md) for
-the full policy.
-
 ## Acknowledgements and license
 
 This codebase is built on [veRL](https://github.com/volcengine/verl). Upstream
 copyright and attribution notices are retained in the source tree.
 
-The repository is released under the [Apache License 2.0](LICENSE). Citation
-metadata and public checkpoint links will be added after the anonymous review
-period.
+The repository is released under the [Apache License 2.0](LICENSE).
